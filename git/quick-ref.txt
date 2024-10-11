@@ -1,0 +1,64 @@
+=================== Reference ==============================
+
+Links:
+	https://dzone.com/articles/top-20-git-commands-with-examples
+	
+
+------------------------ In Portal ------------------------
+
+1. Token generation (Required for command line authentication)
+	Setting > Developer Setting > Tokens > Classic Token > Generate / Copy Token 
+	Use the Token as password along with login user as username
+
+2. Create repository through Portal
+	Repositories > New
+
+------------------------ In Local Command line for new repository ------------------------
+
+1. git init <repo name>
+	This command is used to start a new repository. A new sub-folder will be created with the repo name. Move to the new folder to rest of the command
+
+2. git branch -M main
+	Set the local code branch to main branch 
+
+3. git remote add origin <repo path>
+	Set the remote repo reference
+
+
+------------------------ In Local Command line for existing repository ------------------------
+
+1. git clone <repo path>
+	download the code from remote repository
+
+2. git checkout <branch name>
+	switch from one branch to another (main is the top of all)
+
+=================== In Local Command line for working with repository ==============================
+
+1. git add .
+	Add all file and folder to the repository 
+
+2. git commit -a -m "first commit"
+	Commit the file to push to the repository 
+
+3. git diff  
+	shows the file differences which are not yet staged
+
+4. git reset <file>
+	unstages the file, but it preserves the file contents.
+
+5. git status  
+	lists all the files that have to be committed.
+
+6. git rm <file>
+	deletes the file from your working directory and stages the deletion
+
+7. git checkout -b <branch name>
+	creates a new branch and also switches to it
+
+8. git merge <branch name>
+	merges the specified branch’s history into the current branch
+
+4. git push -u origin main
+	sends the branch commits to your remote repository
+	
