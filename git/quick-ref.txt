@@ -13,6 +13,10 @@ Links:
 2. Create repository through Portal
 	Repositories > New
 
+
+1. Generate rsh-token
+	In windows Terminal Login to WLS > ssh-keygen -b 4096 > keep filename as is and add passphrease > cat ~/.ssh/<Generated file name>.pub
+	In Git Portal Under profile > Setting > SSH and GPG Key > add the key
 ------------------------ In Local Command line for new repository ------------------------
 
 1. git init <repo name>
