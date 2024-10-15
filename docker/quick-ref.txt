@@ -1,6 +1,63 @@
 =================== Reference ==============================
 
 Links:
-		
+	
 
------------------------- In Portal ------------------------
+------------------------ Build Command  ------------------------
+
+1. docker ps
+	Show all the running container 
+
+2. docker ps -a 
+	Show all the container (stopped and running)
+
+3. docker build .
+	Build an image based on Dockerfile located to the same dir of the command is being executed
+
+. docker images
+	Shows all the image(s) available to the local m/c 
+
+docker rm <container name> / <container id>
+	remove the stopped container
+
+docker rm -v $(docker ps --filter status=exited -q)
+	remove all stopped container
+
+docker rmi <image name> / <image id> 
+	remove the non-containerized images
+
+docker image prune
+	remove all the non-containerized images
+
+------------------------ Run Command  ------------------------
+
+1. docker run <image name> / <image id> 
+	Run the docker image as container (default is attach to console mode)
+
+2. docker run -p <local port>:<docker internal port> <image name> / <image id> 
+	Run the docker image as container and publish the image internal port to local m/c port so it can be accessed through the local port from the local m/c
+
+3. docker run -it <image name> / <image id>
+	Run the image as container in interactive mode (command line) through terminal
+
+3. docker run -d <image name> / <image id>
+	Run the image as container in detach mode (command line)
+
+4. docker start <container name> / <container id>
+	Run the image as container (command line) (default is detach to console mode)
+
+4. docker start -a -i <container name> / <container id>
+	Run the image as container (command line) (default is detach to console mode) with interactive mode (command line) through terminal
+
+
+. docker stop <container name>
+	Stop the container
+
+docker attach <container name> / <container id>
+	Attach the local console to the container console
+
+docker log <container name> 
+	To see all the logs of the container
+
+docker log -f <container name> 
+	To see all the logs of the container and follow the console as like attach mode
