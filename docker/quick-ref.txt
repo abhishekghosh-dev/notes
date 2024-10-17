@@ -14,19 +14,19 @@ Links:
 3. docker build .
 	Build an image based on Dockerfile located to the same dir of the command is being executed
 
-. docker images
+4. docker images
 	Shows all the image(s) available to the local m/c 
 
-docker rm <container name> / <container id>
+5. docker rm <container name> / <container id>
 	remove the stopped container
 
-docker rm -v $(docker ps --filter status=exited -q)
+6. docker rm -v $(docker ps --filter status=exited -q)
 	remove all stopped container
 
-docker rmi <image name> / <image id> 
+7. docker rmi <image name> / <image id> 
 	remove the non-containerized images
 
-docker image prune
+8. docker image prune
 	remove all the non-containerized images
 
 ------------------------ Run Command  ------------------------
@@ -40,24 +40,23 @@ docker image prune
 3. docker run -it <image name> / <image id>
 	Run the image as container in interactive mode (command line) through terminal
 
-3. docker run -d <image name> / <image id>
+4. docker run -d <image name> / <image id>
 	Run the image as container in detach mode (command line)
 
-4. docker start <container name> / <container id>
+5. docker start <container name> / <container id>
 	Run the image as container (command line) (default is detach to console mode)
 
-4. docker start -a -i <container name> / <container id>
+6. docker start -a -i <container name> / <container id>
 	Run the image as container (command line) (default is detach to console mode) with interactive mode (command line) through terminal
 
-
-. docker stop <container name>
+7. docker stop <container name>
 	Stop the container
 
-docker attach <container name> / <container id>
+8. docker attach <container name> / <container id>
 	Attach the local console to the container console
 
-docker log <container name> 
+9. docker log <container name> 
 	To see all the logs of the container
 
-docker log -f <container name> 
+10.docker log -f <container name> 
 	To see all the logs of the container and follow the console as like attach mode
