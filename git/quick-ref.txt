@@ -19,6 +19,9 @@ Links:
 1. Generate rsh-token
 	In windows Terminal Login to WLS > ssh-keygen -b 4096 > keep filename as is and add passphrease > cat ~/.ssh/<Generated file name>.pub
 	In Git Portal Under profile > Setting > SSH and GPG Key > add the key
+	In windows Terminal > git config --global user.email "<login-mail-id>"
+	In windows Terminal > git config --global user.name "<your name>"
+	
 
 ------------------------ In Local Command line for new repository ------------------------
 
