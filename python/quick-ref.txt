@@ -1,0 +1,14 @@
+=================== Reference ==============================
+
+Links:
+		
+
+------------------------ Create project ------------------------
+
+Create Workspace
+	python -m venv .venv
+	.venv\Scripts\activate.bat
+	copy NUL requirements.txt
+	pip install -r requirements.txt
+	
+	
